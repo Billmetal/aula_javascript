@@ -30,31 +30,31 @@ person[1] = "James";
 
 console.log("\n Array após mudanças : ",person);
 
-/*
+
 var test = "example";
 
 (() => {
-	console.log("Valor dentro da função "${test}"");
+	console.log("Valor dentro da função "+test);
 	
 	if(true){
 		var test = "example";
-		console.log("Valor dentro do if "${test}"");
+		console.log("Valor dentro do if "+test);
 	}
 	
-	console.log("Valor após execução do if "${test}"");
+	console.log("Valor após execução do if "+test);
 })();
 
 (() => {
 	let test = "valor if";
-	console.log("Valor dentro da função "${test}"");
+	console.log("Valor dentro da função "+test);
 	
 	if(true){
 		let test = "valor if";
-		console.log("Valor dentro do if "${test}"");
+		console.log("Valor dentro do if "+test);
 	}
 	
-	console.log("Valor após execução do if "${test}"");
-})();    */
+	console.log('Valor após execução do if '+test);
+})();     
 
 
 
