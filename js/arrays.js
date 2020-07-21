@@ -115,7 +115,7 @@ console.log(students.some(student => student.grade >= 7));
 
 console.log(students.every(student => student.grade >= 7));
 
-// sort
+// sort , reverse
 
 console.log(students.sort((current,next) => current.grade - next.grade));
 
