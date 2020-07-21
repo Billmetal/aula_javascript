@@ -70,6 +70,56 @@ const personsWithCourse = persons.map(person => {
 
 console.log("\nPessoas com a adição do course : ",personsWithCourse);
 
+// flat  e flatmap
+
+const idades = [20,34,[35,60,[70,40]]];
+
+console.log(idades.flat(2));
+
+// Keys , Values e entries
+
+const frutas = ["Melancia","Acerola","Laranja","amora"];
+
+const frutasIterator = frutas.entries();
+
+console.log(frutasIterator);
+
+console.log(frutasIterator.next());
+console.log(frutasIterator.next());
+console.log(frutasIterator.next());
+console.log(frutasIterator.next());
+
+// find , findIndex ,indexOf , lastIndex , includes
+const students = [
+    {
+        name: "John",
+        grade: 7
+    },
+    {
+        name: "Jenny",
+        grade: 5
+    },
+    {
+        name: "Peter",
+        grade: 4
+    }
+];
+
+console.log(students.find(student => student.grade >= 7));
+
+console.log(students.findIndex(student => student.grade >= 7));
+
+// some , every
+
+console.log(students.some(student => student.grade >= 7));
+
+console.log(students.every(student => student.grade >= 7));
+
+// sort
+
+console.log(students.sort((current,next) => current.grade - next.grade));
+
+console.log(students.sort((current,next) => next.grade - current.grade));
 
 // Transformar um array em outro tipo
 const totalAge = persons.reduce((age,person) => {
