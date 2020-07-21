@@ -23,6 +23,26 @@ const persons = [
     }
 ]
 
+const stringsAndNumbers = Array.of("John","Cris","Jenny",2,3,4);
+
+const arrWith3Positions = Array(3);  // [empty x 3]
+
+const personList = Array("John","Cris","Jenny");
+
+// Uso do Array from 
+
+const divs = document.querySelectorAll("div");
+
+console.log(divs);
+
+const divList = Array.from(divis);
+
+divList.shift();
+
+divList.pop();
+
+console.log(divList);
+
 
 // Retornar a quantidade de itens de um array
 console.log("Itens : ",persons.length);
@@ -105,3 +125,37 @@ var dia = new Date(2018,12,17);
 if(dia instanceof Date){
     // code here
 }
+
+
+// Propriedades de adição e remoção
+
+const frutas = ["Melancia","Banana"];
+
+frutas.push("Pêra");  // adiciona no final e retorna o tamanho do array
+
+frutas.pop();  // remove o ultimo elemento e retorna esse elemento
+
+frutas.unshift("Maça");  // adiciona no inicio e retorna o tamanho do array
+
+frutas.shift();   // remove o primeiro elemento e retorna esse elemento
+
+// Concat
+
+const salgados = ["Coxinha","Kibe","Empada"];
+
+const alimentos = frutas.concat(salgados);
+
+console.log(alimentos);
+console.log(frutas);
+console.log(salgados);
+
+// Splice
+
+frutas.splice(1,0,"Acerola");
+
+console.log(frutas);
+
+frutas.splice(2,1,"Laranja","Caqui");
+
+console.log(frutas);
+
