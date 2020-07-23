@@ -1,5 +1,7 @@
 const assert = require("assert");
 const Math = require('../src/math.js');
+// chai
+const expect = require("chai").expect;
 
 let value = 0;
 
@@ -15,14 +17,23 @@ describe("Math class", function() {
         value = 5;
 
         math.sum(5,5, value => {
-            assert.equal(value, 10);
+            expect(value).to.equal(10);
             done();
         });
     });
 
     it("Multiply two numbers", function() {
         const math = new Math();
+        const obj ={
+            name: "Celso Henrique"
+        };
 
-        assert.equal(math.multiply(value,5), 0);
+        const obj2 ={
+            name: "Celso Henrique"
+        };
+
+        expect(math.multiply(value,5)).to.equal(0);
+        expect(obj).to.have.property("name");
+        expect(obj).to.deepEqual(obj2);
     });
 });
