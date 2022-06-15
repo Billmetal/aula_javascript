@@ -8,6 +8,9 @@
  ***/
 
 function comparaNumeros(num1, num2) { 
+    if (!num1 || !num2) { 
+        return "Defina dois números !";
+    }
     let resposta = "Os números " + num1 + " e " + num2;
     let soma = num1 + num2;
     num1 === num2 ? resposta += " são iguais. " : resposta += " não são iguais. ";
@@ -16,6 +19,12 @@ function comparaNumeros(num1, num2) {
     soma > 20 ? resposta += "maior que 20 ." : resposta += "menor que 20 .";
     return resposta;
 }
+
+console.log(comparaNumeros(1,null));
+
+console.log(comparaNumeros());
+
+console.log(comparaNumeros(0,0));
 
 console.log(comparaNumeros(1, 2));
 
