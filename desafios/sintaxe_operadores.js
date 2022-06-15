@@ -5,7 +5,7 @@
  * - Retorne uma String dizendo:
  * "Os números num1 e num2 não/são iguais. Sua soma é (soma) , que é maior/menor que 10 e maior/menor que 20 ."
  * 
- * **/
+ ***/
 
 function comparaNumeros(num1, num2) { 
     let resposta = "Os números " + num1 + " e " + num2;
